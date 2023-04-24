@@ -46,6 +46,8 @@ p {
     padding: 20px;
     position: relative;
     overflow: hidden;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+
 
 }
 
@@ -57,6 +59,8 @@ p {
     background-color: white;
     padding: 1px;
     border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+
 
 }
 
@@ -163,6 +167,7 @@ input[type="text"] {
   flex-direction: column;
   height: 90%; /* ajuste a altura conforme necessário */
   overflow: auto;
+  
     
     
 }
@@ -175,9 +180,10 @@ input[type="text"] {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 10px;
-    max-width: 80%;
+    max-width: 60%;
     clear: both;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    
 
 }
 
@@ -197,11 +203,12 @@ input[type="text"] {
   
   .recebida p {
     margin: 0;
-    font-size: 12px;
-    font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
     margin-right: 100px;
     color: black;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+
   }
   
   .opcoes-mensagem {
@@ -220,9 +227,10 @@ input[type="text"] {
     cursor: pointer;
     margin-right: 10px;
     font-size: 12px;
-    width: 40% ;
+    width:80% ;
     margin-top: 3%;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    align-items: center;
 
   }
   
