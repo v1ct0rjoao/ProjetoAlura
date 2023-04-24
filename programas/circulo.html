@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Desktop</title>
+</head>
+
+<body>
+
+    <div class="topo"></div>
+
+    <div class="container">
+        <div class="quadrado">
+            <ul id="mensagens"></ul>
+            <div class="controle">
+                <form id="form-mensagem">
+                    <input type="text" id="texto" name="texto" placeholder="Digite aqui" required>
+                    <button type="button" class="botao-selecionar">
+                        <img src="alinhar-justificar.png" alt="Descrição da imagem">
+                    </button>
+
+                    <div id="opcoes" class="opcoes-escondidas">
+                        <ul>
+                            <li>
+                                <img src="pasta.png" alt="Descrição da imagem">
+                            </li>
+                            <li>
+                                <img src="chat-seta-crescimento (1).png" alt="Descrição da imagem">
+                            </li>
+                            <li>
+                                <img src="verificacao-de-lista.png" alt="Descrição da imagem">
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="submit" class="botao-azul">
+                        <img src="aviao-de-papel (1).png" alt="enviar">
+                    </button>
+
+                </form>
+            </div>
+        </div>
+<div class="retangulo"></div>
+    </div>
+
+
+    <script>
+        const form = document.getElementById('form-mensagem');
+        const mensagens = document.getElementById('mensagens');
+        const textoInput = document.getElementById('texto');
+    
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const texto = textoInput.value.trim();
+            if (texto) {
+                const novaMensagem = document.createElement('li');
+                novaMensagem.textContent = texto;
+                novaMensagem.classList.add('enviada');
+                mensagens.appendChild(novaMensagem);
+                textoInput.value = '';
+                mensagens.scrollTop = mensagens.scrollHeight;
+            }
+        });
+    
+        const novaMensagem = document.createElement('li');
+        novaMensagem.innerHTML = `
+      <div class="recebida">
+        <p>Olá, seja bem-vindo! Com o que deseja trabalhar?</p>
+        <div class="opcoes-mensagem">
+          <button class="botao-opcao">Solicitação de compra</button>
+          <button class="botao-opcao">Relatórios</button>
+        </div>
+      </div>
+    `;
+        novaMensagem.classList.add('recebida');
+        mensagens.appendChild(novaMensagem);
+        mensagens.scrollTop = mensagens.scrollHeight;
+    </script>
+    
+
+</body>
+
+</html>

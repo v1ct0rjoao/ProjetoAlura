@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #333333;
+    font-size: 36px;
+    text-align: center;
+}
+
+p {
+    color: #666666;
+    font-size: 18px;
+    text-align: center;
+}
+
+.topo {
+    background-color: #ffffff;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quadrado {
+    background-color: rgb(199, 199, 199);
+    width: 40%;
+    height: 70%;
+    margin: 20% auto 0;
+    margin-top: 100px;
+    margin-left: 10%;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.controle {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 1px;
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+
+input[type="text"] {
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 1%;
+    width: 80%;
+    outline: none;
+}
+
+.botao-azul {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 6%;
+
+}
+
+.botao-azul img {
+    width: 20px;
+    height: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.botao-azul img:hover {
+    transform: scale(1.2);
+}
+
+.botao-selecionar {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 0.1%;
+
+}
+
+.botao-selecionar img {
+    width: 20px;
+    height: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.botao-selecionar img:hover {
+    transform: scale(1.2);
+}
+
+.opcoes-escondidas {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    right: 22px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1;
+
+}
+
+.opcoes-escondidas ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+
+}
+
+.opcoes-escondidas li {
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    color: white;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    display: block;
+
+
+}
+
+.opcoes-escondidas li:hover {
+    transform: scale(1.2);
+}
+
+.opcoes-escondidas img {
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+#mensagens {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   width: 100%;
+  flex-direction: column;
+  height: 90%; /* ajuste a altura conforme necessário */
+  overflow: auto;
+    
+    
+}
+
+#mensagens::-webkit-scrollbar {
+    display: none;
+  }
+
+#mensagens li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    clear: both;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.enviada {
+    background-color: #007bff;
+    color: white;
+    float: right;
+}
+
+.recebida {
+    background-color: #F1F0F0;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .recebida p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 100px;
+    color: black;
+  }
+  
+  .opcoes-mensagem {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    
+  }
+  
+  .botao-opcao {
+    background-color: #0057b4;
+    color: white;
+    padding: 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 12px;
+    width: 40% ;
+    margin-top: 3%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+
+  }
+  
+  .botao-opcao:hover {
+    background-color: #1083ff;
+  }
+  
+  
+
+
+.retangulo {
+    background-color: white;
+    width: 30%;
+    height: 60%;
+    margin: 20% auto 0;
+    margin-top: 100px;
+    border-radius: 10px;
+    margin-right: 10%;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+
+}
